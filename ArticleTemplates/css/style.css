@@ -1803,78 +1803,6 @@ a {
   .offline .element-audio figcaption {
     background-color: white; }
 
-aside {
-  float: right;
-  margin: 0px 0px 24px 24px; }
-  @media all and (min-width: 28.125em) and (max-width: 40.615em) {
-    aside {
-      margin-right: -2.12766%; } }
-  @media all and (min-width: 40.625em) and (max-width: 56.24em) {
-    aside {
-      margin-right: -32.39437%; } }
-  @media all and (min-width: 56.25em) {
-    aside {
-      margin-right: -32.63158%; } }
-  aside.aside-witness {
-    border-top: 1px dotted #dcdad5;
-    padding: 12px 12px 12px 0px;
-    position: relative;
-    clear: right; }
-    @media all and (max-width: 28.115em) {
-      aside.aside-witness {
-        width: 100%;
-        padding-right: 0;
-        margin-bottom: 18px;
-        border-bottom: 1px dotted #dcdad5; } }
-    @media all and (min-width: 28.125em) and (max-width: 40.615em) {
-      aside.aside-witness {
-        width: 36.17021%; } }
-    @media all and (min-width: 40.625em) and (max-width: 56.24em) {
-      aside.aside-witness {
-        width: 32.39437%; } }
-    @media all and (min-width: 56.25em) {
-      aside.aside-witness {
-        width: 24.21053%; } }
-    aside.aside-witness .touchpoint {
-      display: inline-block;
-      -webkit-touch-callout: none;
-      -webkit-user-select: none; }
-      @media all and (max-width: 28.115em) {
-        aside.aside-witness .touchpoint {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: flex;
-          -webkit-box-align: center;
-          -webkit-align-items: center;
-          align-items: center; } }
-      aside.aside-witness .touchpoint > * {
-        display: block; }
-      aside.aside-witness .touchpoint .touchpoint__button--primary {
-        background-color: #3e454c;
-        color: #4bc6df;
-        margin-right: 10px; }
-        @media all and (max-width: 28.115em) {
-          aside.aside-witness .touchpoint .touchpoint__button--primary {
-            -webkit-flex-shrink: 0;
-            flex-shrink: 0;
-            min-width: 44px;
-            -webkit-box-flex: 1; } }
-      aside.aside-witness .touchpoint .touchpoint__label {
-        color: #3e454c;
-        padding: 0;
-        margin: 6px 0px 6px 0px;
-        -webkit-box-flex: 2; }
-      aside.aside-witness .touchpoint:active .touchpoint__button {
-        background-color: #4bc6df;
-        color: #3e454c; }
-      aside.aside-witness .touchpoint:active .touchpoint__label {
-        color: #4bc6df; }
-
-#standard-article aside.aside-witness {
-  display: none; }
-  #standard-article aside.aside-witness.positioned {
-    display: block; }
-
 .bullet {
   color: transparent;
   vertical-align: baseline;
@@ -2444,43 +2372,6 @@ aside {
       padding: 6px 12px 24px 12px; } }
   #liveblog .article__body--liveblog__pinned .article__image-caption .article__image-caption__icon {
     display: none; }
-#liveblog aside.aside-witness {
-  float: none;
-  background-color: white;
-  border-top: none;
-  border-bottom: 2px solid #dcdad5;
-  margin: 12px 12px 12px 12px;
-  padding: 12px 12px 12px 12px;
-  width: auto;
-  position: relative;
-  overflow: hidden; }
-  @media all and (min-width: 28.125em) {
-    #liveblog aside.aside-witness {
-      margin-left: 0;
-      margin-right: 0; } }
-  #liveblog aside.aside-witness .touchpoint__label {
-    margin-bottom: 0;
-    margin-right: 12px; }
-    @media all and (max-width: 44.9375em) {
-      #liveblog aside.aside-witness .touchpoint__label {
-        height: 44px;
-        width: 180px; } }
-    @media all and (min-width: 45em) {
-      #liveblog aside.aside-witness .touchpoint__label {
-        padding-top: 15px; } }
-    @media all and (min-width: 40.625em) {
-      #liveblog aside.aside-witness .touchpoint__label {
-        position: absolute;
-        top: 0;
-        float: left; } }
-    @media all and (min-width: 40.625em) and (max-width: 56.24em) {
-      #liveblog aside.aside-witness .touchpoint__label {
-        padding-left: 1.40845%;
-        left: 32.39437%; } }
-    @media all and (min-width: 56.25em) {
-      #liveblog aside.aside-witness .touchpoint__label {
-        padding-left: 1.05263%;
-        left: 30.52632%; } }
 #liveblog .live-summary-more {
   text-indent: 0;
   display: none; }
@@ -2592,8 +2483,6 @@ aside {
     width: 44px;
     height: 44px; }
 
-#liveblog.android .aside-witness {
-  margin: 12px 12px 12px 12px; }
 #liveblog.android .article__body--liveblog__pinned figcaption {
   padding: 6px 12px 24px 12px; }
 
@@ -3286,3 +3175,48 @@ aside {
 .feature3 .table,
 .feature3 .article {
   border-top-color: #c900a8; }
+
+
+
+.aside [data-icon]::before{font-family:"Guardian Icons",Georgia,serif;content:attr(data-icon);speak:none}
+
+.aside{margin:12px 0px;border-top:1px dotted #dcdad5;padding:12px 0px;width:100%;}
+@media all and (max-width: 28.115em){.aside{border-bottom:1px dotted #dcdad5}}
+.article--liveblog .aside-witness{border-top:1px solid #999;border-bottom:2px solid #dcdad5;background-color:#fff;overflow:hidden;margin:12px 0px;padding:12px}
+@media all and (max-width: 28.115em){.article--liveblog .aside-witness{margin:12px}}
+.article--liveblog .aside-witness .prose a{color:#005689}
+.article--liveblog .aside-witness .prose a:active{color:#4bc6df}
+.prose *:first-child .aside{border-top:0;padding-top:0}
+
+.aside-witness{overflow:auto}
+.aside-witness .aside-witness__action{display:inline-block;float:left;width:66%}
+.aside-witness .aside-witness__action .touchpoint .touchpoint__button{background-color:#3e454c;color:#4bc6df}
+.aside-witness .aside-witness__action .touchpoint .touchpoint__label{color:#3e454c;margin:0 0 0 6px;padding:0;max-width:180px}
+.aside-witness .aside-witness__action .touchpoint:active .touchpoint__button{background-color:#4bc6df;color:#3e454c}
+.aside-witness .aside-witness__action .touchpoint:active .touchpoint__label{color:#4bc6df}
+.aside-witness .aside-witness__sponsor{float:right;display:inline-block;margin-top:6px}
+@media all and (max-width: 28.115em){.aside-witness .aside-witness__sponsor{width:33%;text-align:right}}
+.aside-witness .aside-witness__sponsor .aside-witness__sponsor__graphic{max-width:110px;max-height:35px}
+@media all and (max-width: 28.115em){.aside-witness__action{display:table-cell}.aside-witness__action .touchpoint .touchpoint__button{margin-right:6px;float:left}.aside-witness__action .touchpoint .touchpoint__label{margin:0;width:66%;float:left}}
+
+.article--standard .aside,.article--comment .aside,.article--feature .aside,.article--audio .aside{float:right;clear:right}
+@media all and (min-width: 28.125em){.article--standard .aside,.article--comment .aside,.article--feature .aside,.article--audio .aside{margin:0px 0px 24px 24px;padding:12px 12px 12px 0px}}
+@media all and (min-width: 28.125em) and (max-width: 40.615em){.article--standard .aside,.article--comment .aside,.article--feature .aside,.article--audio .aside{margin-right:12px;width:36.17021%}}
+@media all and (min-width: 40.625em) and (max-width: 56.24em){.article--standard .aside,.article--comment .aside,.article--feature .aside,.article--audio .aside{margin-right:-32.39437%;width:32.39437%}}
+@media all and (min-width: 56.25em){.article--standard .aside,.article--comment .aside,.article--feature .aside,.article--audio .aside{margin-right:-32.63158%;width:24.21053%}}
+.article--standard .aside-witness,.article--comment .aside-witness,.article--feature .aside-witness,.article--audio .aside-witness{display:none}
+.article--standard .aside-witness.js--positioned,.article--comment .aside-witness.js--positioned,.article--feature .aside-witness.js--positioned,.article--audio .aside-witness.js--positioned{display:block}
+.article--standard .aside-witness .aside-witness__action .touchpoint__label,.article--comment .aside-witness .aside-witness__action .touchpoint__label,.article--feature .aside-witness .aside-witness__action .touchpoint__label,.article--audio .aside-witness .aside-witness__action .touchpoint__label{margin:6px 0}
+.article--standard .aside-witness .aside-witness__sponsor,.article--comment .aside-witness .aside-witness__sponsor,.article--feature .aside-witness .aside-witness__sponsor,.article--audio .aside-witness .aside-witness__sponsor{float:left}
+
+.article--liveblog .aside-witness{padding-left:8px;width:auto}
+@media all and (min-width: 40.625em) and (max-width: 56.24em){.article--liveblog .aside-witness{padding-left:33.80282%}}
+@media all and (min-width: 56.25em){.article--liveblog .aside-witness{padding-left:31.57895%}}
+.article--liveblog .aside-witness .aside-witness__sponsor{max-width:130px}
+
+.tone--media .article--audio .aside,.tone--media .article--visual .aside{border-color:#666;margin-bottom:0;border-bottom:0}
+.tone--media .article--audio .aside-witness__action .touchpoint .touchpoint__button,.tone--media .article--visual .aside-witness__action .touchpoint .touchpoint__button{color:#333;background-color:#fb0;margin-right:6px}
+.tone--media .article--audio .aside-witness__action .touchpoint .touchpoint__label,.tone--media .article--visual .aside-witness__action .touchpoint .touchpoint__label{color:#fff}
+.tone--media .article--audio .aside-witness__sponsor,.tone--media .article--visual .aside-witness__sponsor{width:33%;text-align:right}
+.tone--media .article--audio .aside-witness__sponsor .aside-witness__sponsor__graphic__text,.tone--media .article--visual .aside-witness__sponsor .aside-witness__sponsor__graphic__text{fill:#fff}
+.tone--media .article--audio .aside-witness__sponsor .aside-witness__sponsor__graphic__logo,.tone--media .article--visual .aside-witness__sponsor .aside-witness__sponsor__graphic__logo{fill:#ffe600}
