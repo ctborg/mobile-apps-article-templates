@@ -15,11 +15,11 @@ define([
     function MoreTags() {
 
         this.init = function () {
-            var tags = $("#tags .inline-list__item a");
+            var tags = $(".tags .inline-list__item a");
             var string = "<li class='inline-list__item more-button js-more-button'><a id='more'>more</a></li>";
             // var el = $(".js-more-button"); // *** Used for Bean not working ***
             var i = 0;
-
+            var more;
             // window.logOnScreen("Tags are "+tags);
             // window.logOnScreen("String is "+string);
             function showTags(tags, el) {
@@ -45,6 +45,8 @@ define([
                     window.logOnScreen("5 "+ i);
                     string = bonzo.create(string);
                     $(string).insertAfter($(this).parent());
+                    more = true;
+                    
                 } 
 
                 if (i >= 5) {
@@ -53,15 +55,18 @@ define([
                     window.logOnScreen("6 "+ i);
                 }
                 i++;
+                return more;
+
             });
 
             // *** Bean On click not working correctly, using native JS ***
             // bean.on(el, 'click', function (tags) {
             //     showTags(tags);
             // });
-            var el = document.getElementById("more").parentNode;
-            el.addEventListener("click", function(){ showTags(tags, el); }, false);
-
+            if (more === true) {
+                var el = document.getElementById("more").parentNode;
+                el.addEventListener("click", function(){ showTags(tags, el); }, false);
+            }
         };
 
     }
