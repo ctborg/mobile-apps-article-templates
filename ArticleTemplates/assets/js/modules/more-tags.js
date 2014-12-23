@@ -27,8 +27,8 @@ define([
                 var i = 0;
                 // window.logOnScreen("EL "+el);
                 tags.each(function (index) {
-                    console.log("Looping"+i);
-                    window.logOnScreen("Looping"+i);
+                    // console.log("Looping"+i);
+                    // window.logOnScreen("Looping"+i);
                     if (i >= 5) {
                     $(this).parent().addClass("show-tags");
                     }
@@ -40,10 +40,10 @@ define([
 
             tags.each(function () {
                 // console.log("Module More Tags is Looping "+i);
-                window.logOnScreen("Module More Tags is Looping "+i);
+                // window.logOnScreen("Module More Tags is Looping "+i);
                 if (i > 4) {
                     // console.log("5 "+ i);
-                    window.logOnScreen("5 "+ i);
+                    // window.logOnScreen("5 "+ i);
                     string = bonzo.create(string);
                     $(string).insertAfter($(this).parent());
                     more = true;
@@ -53,7 +53,7 @@ define([
                 if (i >= 5) {
                     $(this).parent().addClass("hide-tags");
                     // console.log("6+ "+ i);
-                    window.logOnScreen("6 "+ i);
+                    // window.logOnScreen("6 "+ i);
                 }
                 i++;
                 return more;
