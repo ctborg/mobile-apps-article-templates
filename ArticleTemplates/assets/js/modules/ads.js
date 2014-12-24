@@ -101,7 +101,7 @@ define([
                 });
             },
             getBannerPosCallback : function(callbackNamespace, callbackFunction) {
-                // console.info("Called getBannerPosCallback");
+                console.info("Called getBannerPosCallback");
                 modules.getBannerPos(function(x, y, w, h){
                     // console.info("left "+ x +" top " + y + " width "+ w +" height "+ h);
                     window.GuardianJSInterface.bannerAdsPosition(x, y, w, h);
@@ -143,18 +143,18 @@ define([
                 window.getMpuPosCallback = function (callbackNamespace, callbackFunction) {
 
                     var interactive  =  (document.getElementsByTagName("iframe")[0] || document.getElementsByClassName("interactive")[0]) ? true : false;
-
+                    console.info("Called getMpuPosCallback");
                     function onloadHandler () { 
                         modules.getMpuPos(function(x, y, w, h){
                             window.GuardianJSInterface.mpuAdsPosition(x, y, w, h);
-                            // console.log("Initial slot position "+x+" "+y+" "+w+" "+h);
+                            console.log("Initial slot position "+x+" "+y+" "+w+" "+h);
                         });  
                     }
 
                     function iframeHandler () {
                         modules.getMpuPos(function(x, y, w, h){
                             window.GuardianJSInterface.mpuAdsPosition(x, y, w, h);
-                            // console.log("Initial slot position "+x+" "+y+" "+w+" "+h);
+                            console.log("Initial slot position "+x+" "+y+" "+w+" "+h);
                             modules.posPoller(y);
                         });
                     }
