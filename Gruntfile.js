@@ -53,6 +53,20 @@ module.exports = function(grunt) {
             }
         },
 
+        // Remove unused css
+
+        uncss: {
+          dist: {
+            options: {
+              csspath      : '../../ArticleTemplates/assets/css',
+              stylesheets  : ['style.css']
+            },
+            files: {
+              'test/fixture/css/min-styles.css': ['test/fixture/article1.html']
+            }
+          }
+        },
+
         // Javascript
 
         jshint: {
@@ -66,7 +80,7 @@ module.exports = function(grunt) {
             dev: {
                 options: {
                     baseUrl: "ArticleTemplates/assets/js",
-                    mainConfigFile: 'ArticleTemplates/assets/js/app.js',
+                    mainConfigFile: 'ArticlesTemplatescleTemplates/assets/js/app.js',
                     name: "app",
                     out: "ArticleTemplates/assets/build/app.js",
                     optimize: 'uglify2',
@@ -161,7 +175,7 @@ module.exports = function(grunt) {
 
     grunt.task.run('notify_hooks');
 
-    grunt.registerTask('develop', ['express','watch']);
+    grunt.registerTask('develop', ['express','watch', 'uncss']);
     grunt.registerTask('build', ['rsync', 'shell:android']);
     grunt.registerTask('default', 'develop');
 };
