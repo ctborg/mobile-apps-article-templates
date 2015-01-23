@@ -62,10 +62,18 @@ module.exports = function(grunt) {
               stylesheets  : ['style.css']
             },
             files: {
-              'test/fixture/css/min-styles.css': ['test/fixture/article1.html']
+              'test/dest/css/style.min.css': ['test/fixture/article1.html']
             }
           }
         },
+
+        processhtml: {
+            dist: {
+              files: {
+                'test/dest/article1.html': ['test/fixture/article1.html']
+              }
+            }
+          },
 
         // Javascript
 
@@ -174,7 +182,7 @@ module.exports = function(grunt) {
     });
 
     grunt.task.run('notify_hooks');
-
+    grunt.registerTask('mincss', ['uncss','processhtml']);
     grunt.registerTask('develop', ['express','watch', 'uncss']);
     grunt.registerTask('build', ['rsync', 'shell:android']);
     grunt.registerTask('default', 'develop');
