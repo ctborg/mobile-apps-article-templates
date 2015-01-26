@@ -9,7 +9,7 @@ require 'csv'
 content = JSON.parse(open("http://localhost:9222/json").read)
 baseUrl = ARGV.shift
 @assetFile = ARGV.shift
-assetContent = IO.readlines(File.join(File.dirname(__FILE__),'..','fixture',@assetFile))
+assetContent = IO.readlines(File.join(File.dirname(__FILE__),'..','dest',@assetFile))
 
 @seconds = 5;
 @session, @model, @label = assetContent[1].split(',')
