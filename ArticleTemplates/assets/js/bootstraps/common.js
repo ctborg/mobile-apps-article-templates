@@ -9,7 +9,8 @@ define([
     'modules/comments',
     'modules/cards',
     'modules/more-tags',
-    'modules/$'
+    'modules/witness',
+    'modules/$'    
 ], function (
     bean,
     bonzo,
@@ -20,6 +21,7 @@ define([
     Comments,
     Cards,
     MoreTags,
+    Witness,
     $
 ) {
     'use strict';
@@ -291,6 +293,10 @@ define([
                     break;
                 }
             }
+        },
+
+        fixWitness: function (){
+            Witness.init();
         }
     },
 
@@ -321,6 +327,8 @@ define([
             modules.showTabs(window);
             modules.setGlobalObject(window);
             modules.fixSeries();
+            modules.fixWitness();
+
 
             if (!document.body.classList.contains('no-ready')) {
                 window.location.href = 'x-gu://ready';
