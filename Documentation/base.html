@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Guardian Apps Article Templates: Base</title>
+
+    <!-- CSS & JS for article templates -->
+    <link rel="stylesheet" href="../ArticleTemplates/assets/css/style.css"/>
+    <script type="text/javascript" src="../ArticleTemplates/assets/js/shim.js"></script>
+
+    <!-- CSS for documentation -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+
+<body class="styleguide no-ready styleguide--base">
+    <input class="styleguide__navigation-checkbox" id="styleguide__navigation-checkbox" type="checkbox"/>
+
+    <nav class="styleguide__navigation" role="navigation" id="sidebar">
+        <ul class="nav">
+            <li class="nav__item"><a href="../">Home</a></li>
+        
+            <li class="nav__item"><a href="modules.html">Modules</a></li>
+        
+            <li class="nav__item"><a href="base.html">Base</a></li>
+        
+            <li class="nav__item"><a href="guardianwitness.html">GuardianWitness</a></li>
+        
+            <li class="nav__item"><a href="media.html">Media</a></li>
+        
+            <li class="nav__item"><a href="charts.html">Charts</a></li>
+        
+            <li class="nav__item"><a href="blocks.html">Blocks</a></li>
+        
+            <li class="nav__item"><a href="content.html">Content</a></li>
+        
+            <li class="nav__item"><a href="containers.html">Containers</a></li>
+        
+            <li class="nav__item"><a href="external.html">External</a></li>
+        
+            <li class="nav__item"><a href="football.html">Football</a></li>
+        
+        </ul>
+    </nav>
+
+    <main class="styleguide__main selectable" role="main">
+        <article class="styleguide__article">
+            <div class="styleguide__article__header">
+                <h1 class="headline">Base</h1>
+            </div>
+
+            <div class="tags">
+                <ul class="inline-list"><!--
+                
+                 --><li class="inline-list__item"><a href="#animation">Animation</a><span class="tags__separator" aria-hidden="true">&#183;</span></li><!--
+                
+                 --><li class="inline-list__item"><a href="#colour">Colours</a><span class="tags__separator" aria-hidden="true">&#183;</span></li><!--
+                
+                 --><li class="inline-list__item"><a href="#icons">Icons</a><span class="tags__separator" aria-hidden="true">&#183;</span></li><!--
+                
+                --></ul>
+            </div>
+
+            <div class="styleguide__article__body">
+                
+<h1 id="animation" class="styleguide">Animation</h1>
+<p class="styleguide">Fade in from right:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="styleguide__anim">
+    <span class="animated fadeinright"></span>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__anim"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"animated fadeinright"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Slide in from right:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="styleguide__anim">
+    <span class="animated slideinright"></span>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__anim"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"animated slideinright"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Scale out:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="styleguide__anim">
+    <span class="animated scaleout"></span>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__anim"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"animated scaleout"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Blink:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="styleguide__anim">
+    <span class="animated blink"></span>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__anim"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"animated blink"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="colour" class="styleguide">Colours</h1>
+<p class="styleguide">A standard colour palette used across the Guardian’s digital products.</p><div class="codeExample">
+  <div class="exampleOutput">
+    <p><b>Basic Shades</b></p>
+<div class="styleguide__color--shade-1"></div>
+<div class="styleguide__color--shade-2"></div>
+<div class="styleguide__color--shade-3"></div>
+<div class="styleguide__color--shade-4"></div>
+<div class="styleguide__color--shade-5"></div>
+<div class="styleguide__color--shade-6"></div>
+<div class="styleguide__color--shade-7"></div>
+<div class="styleguide__color--shade-8"></div>
+
+<p class="clear"><b>Tone News</b></p>
+<div class="styleguide__color--tone-news"></div>    
+<div class="styleguide__color--tone-news-accent"></div>
+
+<p class="clear"><b>Tone Live</b></p>
+<div class="styleguide__color--tone-live"></div>
+<div class="styleguide__color--tone-live-accent"></div>                  
+
+<p class="clear"><b>Tone Media</b></p>
+<div class="styleguide__color--tone-media"></div>
+<div class="styleguide__color--tone-media-accent"></div>
+
+<p class="clear"><b>Tone Feature</b></p>
+<div class="styleguide__color--tone-feature1"></div>
+<div class="styleguide__color--tone-feature1-accent"></div>
+
+<p class="clear"><b>Tone Comment</b></p>
+<div class="styleguide__color--tone-comment"></div>
+<div class="styleguide__color--tone-comment-accent"></div>
+<div class="styleguide__color--tone-comment-text"></div>
+<div class="styleguide__color--tone-comment-bg"></div>
+
+<p class="clear"><b>Tone DeadBlog</b></p>
+<div class="styleguide__color--tone-deadblog"></div>
+
+<p class="clear"><b>Tone Review</b></p>
+<div class="styleguide__color--tone-review-accent"></div>
+<div class="styleguide__color--tone-review"></div>
+<div class="styleguide__color--tone-review-meta-background"></div>
+
+<p class="clear"><b>Tone Analysis</b></p>
+<div class="styleguide__color--tone-analysis"></div>              
+
+<p class="clear"><b>Tone Podcast</b></p>
+<div class="styleguide__color--tone-podcast"></div>
+<div class="styleguide__color--tone-podcast-ply-background"></div>
+
+<p class="clear"><b>Tags</b></p>
+<div class="styleguide__color--global-tags"></div>
+<div class="styleguide__color--blogs-tags"></div>
+
+<p class="clear"><b>Witness</b></p>
+<div class="styleguide__color--witness clear"></div>
+<div class="styleguide__color--witness-bg"></div>
+
+<p class="clear"><b>Comments</b></p>
+<div class="styleguide__color--tone-comments-more-bg"></div>
+
+<p class="clear"><b>ADV tones</b></p>
+<div class="styleguide__color--global-adv-bg"></div>
+<div class="styleguide__color--global-adv-bands"></div>
+<div class="styleguide__color--global-adv-text"></div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;p&gt;&lt;b&gt;</span>Basic Shades<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--shade-1"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--shade-2"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--shade-3"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--shade-4"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--shade-5"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--shade-6"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--shade-7"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--shade-8"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"clear"</span><span class="nt">&gt;&lt;b&gt;</span>Tone News<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--tone-news"</span><span class="nt">&gt;&lt;/div&gt;</span>    
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--tone-news-accent"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"clear"</span><span class="nt">&gt;&lt;b&gt;</span>Tone Live<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--tone-live"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--tone-live-accent"</span><span class="nt">&gt;&lt;/div&gt;</span>                  
+
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"clear"</span><span class="nt">&gt;&lt;b&gt;</span>Tone Media<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--tone-media"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--tone-media-accent"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"clear"</span><span class="nt">&gt;&lt;b&gt;</span>Tone Feature<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--tone-feature1"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--tone-feature1-accent"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"clear"</span><span class="nt">&gt;&lt;b&gt;</span>Tone Comment<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--tone-comment"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--tone-comment-accent"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--tone-comment-text"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--tone-comment-bg"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"clear"</span><span class="nt">&gt;&lt;b&gt;</span>Tone DeadBlog<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--tone-deadblog"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"clear"</span><span class="nt">&gt;&lt;b&gt;</span>Tone Review<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--tone-review-accent"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--tone-review"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--tone-review-meta-background"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"clear"</span><span class="nt">&gt;&lt;b&gt;</span>Tone Analysis<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--tone-analysis"</span><span class="nt">&gt;&lt;/div&gt;</span>              
+
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"clear"</span><span class="nt">&gt;&lt;b&gt;</span>Tone Podcast<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--tone-podcast"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--tone-podcast-ply-background"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"clear"</span><span class="nt">&gt;&lt;b&gt;</span>Tags<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--global-tags"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--blogs-tags"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"clear"</span><span class="nt">&gt;&lt;b&gt;</span>Witness<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--witness clear"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--witness-bg"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"clear"</span><span class="nt">&gt;&lt;b&gt;</span>Comments<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--tone-comments-more-bg"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"clear"</span><span class="nt">&gt;&lt;b&gt;</span>ADV tones<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--global-adv-bg"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--global-adv-bands"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"styleguide__color--global-adv-text"</span><span class="nt">&gt;&lt;/div&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="icons" class="styleguide">Icons</h1>
+<p class="styleguide">A comprehensive collection of bespoke icons based on the design of Guardian Eygptian.</p><div class="codeExample">
+  <div class="exampleOutput">
+    <span class="styleguide__icon"><span data-icon="&#xe000;" aria-hidden="true"></span> Double chevron, up</span>
+<span class="styleguide__icon"><span data-icon="&#xe001;" aria-hidden="true"></span> Double chevron, down</span>
+<span class="styleguide__icon"><span data-icon="&#xe002;" aria-hidden="true"></span> Chevron, down</span>
+<span class="styleguide__icon"><span data-icon="&#xe003;" aria-hidden="true"></span> Chevron, up</span>
+<span class="styleguide__icon"><span data-icon="&#xe004;" aria-hidden="true"></span> Arrow, left</span>
+<span class="styleguide__icon"><span data-icon="&#xe005;" aria-hidden="true"></span> Arrow, right</span>
+<span class="styleguide__icon"><span data-icon="&#xe006;" aria-hidden="true"></span> Double chevron, left</span>
+<span class="styleguide__icon"><span data-icon="&#xe007;" aria-hidden="true"></span> Double chevron, right</span>
+<span class="styleguide__icon"><span data-icon="&#xe008;" aria-hidden="true"></span> Share (Android)</span>
+<span class="styleguide__icon"><span data-icon="&#xe009;" aria-hidden="true"></span> Share (iOS)</span>
+<span class="styleguide__icon"><span data-icon="&#xe00a;" aria-hidden="true"></span> Chevron, left</span>
+<span class="styleguide__icon"><span data-icon="&#xe00b;" aria-hidden="true"></span> Chevron, right</span>
+<span class="styleguide__icon"><span data-icon="&#xe00c;" aria-hidden="true"></span> Guardian hallmark</span>
+<span class="styleguide__icon"><span data-icon="&#xe00d;" aria-hidden="true"></span> Font size</span>
+<span class="styleguide__icon"><span data-icon="&#xe00e;" aria-hidden="true"></span> Font size, increase</span>
+<span class="styleguide__icon"><span data-icon="&#xe00f;" aria-hidden="true"></span> Font size, decrease</span>
+<span class="styleguide__icon"><span data-icon="&#xe010;" aria-hidden="true"></span> Bookmark</span>
+<span class="styleguide__icon"><span data-icon="&#xe014;" aria-hidden="true"></span> Sort</span>
+<span class="styleguide__icon"><span data-icon="&#xe015;" aria-hidden="true"></span> Return, top right</span>
+<span class="styleguide__icon"><span data-icon="&#xe01B;" aria-hidden="true"></span> Location, pin</span>
+<span class="styleguide__icon"><span data-icon="&#xe01D;" aria-hidden="true"></span> Full screen, close</span>
+<span class="styleguide__icon"><span data-icon="&#xe020;" aria-hidden="true"></span> Full screen, open</span>
+<span class="styleguide__icon"><span data-icon="&#xe021;" aria-hidden="true"></span> Interactive</span>
+<span class="styleguide__icon"><span data-icon="&#xe029;" aria-hidden="true"></span> Quote</span>
+<span class="styleguide__icon"><span data-icon="&#xe02D;" aria-hidden="true"></span> Warning</span>
+<span class="styleguide__icon"><span data-icon="&#xe02E;" aria-hidden="true"></span> Clock</span>
+<span class="styleguide__icon"><span data-icon="&#xe032;" aria-hidden="true"></span> Edit</span>
+<span class="styleguide__icon"><span data-icon="&#xe036;" aria-hidden="true"></span> Star</span>
+<span class="styleguide__icon"><span data-icon="&#xe037;" aria-hidden="true"></span> User</span>
+<span class="styleguide__icon"><span data-icon="&#xe038;" aria-hidden="true"></span> Search</span>
+<span class="styleguide__icon"><span data-icon="&#xe039;" aria-hidden="true"></span> Zoom out</span>
+<span class="styleguide__icon"><span data-icon="&#xe03A;" aria-hidden="true"></span> Zoom in</span>
+<span class="styleguide__icon"><span data-icon="&#xe03C;" aria-hidden="true"></span> Comment</span>
+<span class="styleguide__icon"><span data-icon="&#xe03D;" aria-hidden="true"></span> Comment, add</span>
+<span class="styleguide__icon"><span data-icon="&#xe03E;" aria-hidden="true"></span> Open in new window</span>
+<span class="styleguide__icon"><span data-icon="&#xe040;" aria-hidden="true"></span> Settings</span>
+<span class="styleguide__icon"><span data-icon="&#xe043;" aria-hidden="true"></span> Video</span>
+<span class="styleguide__icon"><span data-icon="&#xe044;" aria-hidden="true"></span> Gallery</span>
+<span class="styleguide__icon"><span data-icon="&#xe045;" aria-hidden="true"></span> Refresh</span>
+<span class="styleguide__icon"><span data-icon="&#xe046;" aria-hidden="true"></span> Audio, mute</span>
+<span class="styleguide__icon"><span data-icon="&#xe047;" aria-hidden="true"></span> Audio</span>
+<span class="styleguide__icon"><span data-icon="&#xe048;" aria-hidden="true"></span> Alert, off</span>
+<span class="styleguide__icon"><span data-icon="&#xe049;" aria-hidden="true"></span> Alert, on</span>
+<span class="styleguide__icon"><span data-icon="&#xe04A;" aria-hidden="true"></span> Menu</span>
+<span class="styleguide__icon"><span data-icon="&#xe04B;" aria-hidden="true"></span> Play</span>
+<span class="styleguide__icon"><span data-icon="&#xe04C;" aria-hidden="true"></span> Stop</span>
+<span class="styleguide__icon"><span data-icon="&#xe04D;" aria-hidden="true"></span> Pause</span>
+<span class="styleguide__icon"><span data-icon="&#xe04E;" aria-hidden="true"></span> Fast-forward</span>
+<span class="styleguide__icon"><span data-icon="&#xe04F;" aria-hidden="true"></span> Close</span>
+<span class="styleguide__icon"><span data-icon="&#xe050;" aria-hidden="true"></span> Plus</span>
+<span class="styleguide__icon"><span data-icon="&#xe051;" aria-hidden="true"></span> Asterisk</span>
+<span class="styleguide__icon"><span data-icon="&#xe056;" aria-hidden="true"></span> Clock, inline</span>
+<span class="styleguide__icon"><span data-icon="&#xe060;" aria-hidden="true"></span> Minus</span>
+<span class="styleguide__icon"><span data-icon="&#xe061;" aria-hidden="true"></span> Return, bottom right</span>
+<span class="styleguide__icon"><span data-icon="&#xe062;" aria-hidden="true"></span> Check</span>
+<span class="styleguide__icon"><span data-icon="&#xe063;" aria-hidden="true"></span> Home</span>
+<span class="styleguide__icon"><span data-icon="&#xe064;" aria-hidden="true"></span> Home, add</span>
+<span class="styleguide__icon"><span data-icon="&#xe065;" aria-hidden="true"></span> Home, remove</span>
+<span class="styleguide__icon"><span data-icon="&#xe066;" aria-hidden="true"></span> Arrow, up</span>
+<span class="styleguide__icon"><span data-icon="&#xe067;" aria-hidden="true"></span> Exclamation mark</span>
+<span class="styleguide__icon"><span data-icon="&#xe068;" aria-hidden="true"></span> Drag handle</span>
+<span class="styleguide__icon"><span data-icon="&#xe069;" aria-hidden="true"></span> Google+</span>
+<span class="styleguide__icon"><span data-icon="&#xe06A;" aria-hidden="true"></span> Facebook</span>
+<span class="styleguide__icon"><span data-icon="&#xe06B;" aria-hidden="true"></span> Twitter</span>
+<span class="styleguide__icon"><span data-icon="&#xe070;" aria-hidden="true"></span> Location, compass</span>
+<span class="styleguide__icon"><span data-icon="&#xe071;" aria-hidden="true"></span> Document</span>
+<span class="styleguide__icon"><span data-icon="&#xe072;" aria-hidden="true"></span> Comment, remove</span>
+<span class="styleguide__icon"><span data-icon="&#xe073;" aria-hidden="true"></span> Clock</span>
+<span class="styleguide__icon"><span data-icon="&#xe074;" aria-hidden="true"></span> Warning</span>
+<span class="styleguide__icon"><span data-icon="&#xe075;" aria-hidden="true"></span> Arrow, up small</span>
+<!-- This list is not definitive...-->
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe000;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Double chevron, up<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe001;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Double chevron, down<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe002;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Chevron, down<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe003;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Chevron, up<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe004;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Arrow, left<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe005;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Arrow, right<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe006;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Double chevron, left<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe007;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Double chevron, right<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe008;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Share (Android)<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe009;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Share (iOS)<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe00a;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Chevron, left<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe00b;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Chevron, right<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe00c;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Guardian hallmark<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe00d;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Font size<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe00e;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Font size, increase<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe00f;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Font size, decrease<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe010;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Bookmark<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe014;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Sort<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe015;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Return, top right<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe01B;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Location, pin<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe01D;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Full screen, close<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe020;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Full screen, open<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe021;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Interactive<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe029;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Quote<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe02D;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Warning<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe02E;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Clock<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe032;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Edit<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe036;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Star<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe037;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> User<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe038;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Search<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe039;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Zoom out<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe03A;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Zoom in<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe03C;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Comment<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe03D;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Comment, add<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe03E;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Open in new window<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe040;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Settings<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe043;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Video<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe044;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Gallery<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe045;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Refresh<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe046;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Audio, mute<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe047;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Audio<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe048;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Alert, off<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe049;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Alert, on<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe04A;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Menu<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe04B;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Play<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe04C;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Stop<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe04D;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Pause<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe04E;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Fast-forward<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe04F;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Close<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe050;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Plus<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe051;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Asterisk<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe056;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Clock, inline<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe060;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Minus<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe061;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Return, bottom right<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe062;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Check<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe063;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Home<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe064;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Home, add<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe065;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Home, remove<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe066;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Arrow, up<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe067;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Exclamation mark<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe068;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Drag handle<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe069;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Google+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe06A;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Facebook<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe06B;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Twitter<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe070;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Location, compass<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe071;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Document<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe072;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Comment, remove<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe073;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Clock<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe074;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Warning<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"styleguide__icon"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-icon=</span><span class="s">"&amp;#xe075;"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Arrow, up small<span class="nt">&lt;/span&gt;</span>
+<span class="c">&lt;!-- This list is not definitive...--&gt;</span></pre>
+    </div>
+  </div>
+</div>
+            </div>
+        </article>
+
+        <footer class="styleguide__contentinfo" role="contentinfo">
+            <p><small>© 2014 Guardian News and Media Limited or its affiliated companies. All rights reserved.</small></p>
+        </footer>
+    </main>
+
+    <label class="styleguide__navigation-toggle touchpoint" for="styleguide__navigation-checkbox">
+        <span class="touchpoint__button" data-icon="&#xe04A;" aria-hidden="true"></span>
+        <span class="touchpoint__label screen-readable">Menu</span>
+    </label>
+
+    <script type="text/javascript" id="gu" src="../ArticleTemplates/assets/js/components/require.js" data-main="/ArticleTemplates/assets/js/app.js" data-js-dir="/ArticleTemplates/assets/js" async></script>
+</body>
+</html>
