@@ -5,11 +5,9 @@ define([
     'fence',
     'fastClick',
     'smoothScroll',
-    //'modules/ads',
     'modules/comments',
     'modules/cards',
     'modules/more-tags',
-    'modules/witness',
     'modules/$'    
 ], function (
     bean,
@@ -17,11 +15,9 @@ define([
     fence,
     FastClick,
     smoothScroll,
-    //Ads,
     Comments,
     Cards,
     MoreTags,
-    Witness,
     $
 ) {
     'use strict';
@@ -38,7 +34,6 @@ define([
                 var figcaption = $('figcaption', el);
                 if (figcaption.length === 0 || figcaption.text() === '') {
                     figcaption.hide();
-                    // $(el).css('border-bottom', 'none');
                 }
             });
         },
@@ -51,15 +46,6 @@ define([
                 });
             }
         },
-
-        /*loadAdverts: function () {
-            // Setup ad tags, insert containers
-            Ads.init({
-                adsEnabled: document.body.getAttribute('data-ads-enabled'),
-                adsConfig: document.body.getAttribute('data-ads-config'),
-                mpuAfterParagraphs: document.body.getAttribute('data-mpu-after-paragraphs')
-            });
-        },*/
 
         loadComments: function () {
             Comments.init();
@@ -112,7 +98,6 @@ define([
             // Resize figures to fit images
             window.articleImageSizer = function () {
                 $('figure img').each(function (el) {
-                    // var el = el;
                     var parent;
                     var imageWidth = el.getAttribute('width') || $(el).dim().width,
                         imageClass = imageWidth < 301 ? 'figure-inline' : 'figure-wide';
@@ -293,10 +278,6 @@ define([
                     break;
                 }
             }
-        },
-
-        fixWitness: function (){
-            Witness.init();
         }
     },
 
@@ -314,7 +295,6 @@ define([
             modules.figcaptionToggle();
             modules.imageSizer();
             modules.insertTags();
-            //modules.loadAdverts();
             modules.loadComments();
             modules.loadCards();
             modules.loadEmbeds();
@@ -327,8 +307,6 @@ define([
             modules.showTabs(window);
             modules.setGlobalObject(window);
             modules.fixSeries();
-            modules.fixWitness();
-
 
             if (!document.body.classList.contains('no-ready')) {
                 window.location.href = 'x-gu://ready';
