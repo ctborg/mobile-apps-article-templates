@@ -8,7 +8,7 @@ define([
     'modules/comments',
     'modules/cards',
     'modules/more-tags',
-    'modules/$'    
+    'modules/$'
 ], function (
     bean,
     bonzo,
